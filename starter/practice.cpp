@@ -39,6 +39,6 @@ int main() {
     vector<int> v2(5, 9);
 
     printVector(v1);
-    printVector(v2);
+    printVector(v2);g
     return 0;
 }
