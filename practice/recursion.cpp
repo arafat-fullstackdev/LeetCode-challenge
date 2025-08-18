@@ -12,6 +12,19 @@ int factorial(int n) {
     }
 }
 
+//febonacci
+int fibonacci(int n) {
+    // Base cases
+    if (n == 0) {
+        return 0;
+    }
+    if (n == 1) {
+        return 1;
+    }
+    // Recursive step
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
 int main() {
     int number = 5;
     std::cout << "The factorial of " << number << " is " << factorial(number) << std::endl;
