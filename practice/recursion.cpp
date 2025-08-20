@@ -25,6 +25,17 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+//
+void printHello(int n) {
+    
+    // Base Case
+    if (n == 0) return;
+    
+    cout << "Hello" << endl;
+    
+    printHello(n - 1);
+}
+
 int main() {
     int number = 5;
     std::cout << "The factorial of " << number << " is " << factorial(number) << std::endl;
