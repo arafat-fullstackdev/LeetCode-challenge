@@ -50,11 +50,22 @@ int main() {
     //     cout<<endl;
     // }
     // print number
+    // for(int i =0; i<=n; i++){
+    //     for(int j =0; j<i+1; j++){
+    //         cout<<i+1<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //print char
+    
     for(int i =0; i<=n; i++){
-        for(int j =0; j<i+1; j++){
-            cout<<i+1<<" ";
-        }
-        cout<<endl;
+        char chr= 'A' +i;
+       for(char j =0; j<=i; j++){
+        cout<<chr<<" ";
+         
+       }
+       cout<<endl;
     }
     return 0;
 }
