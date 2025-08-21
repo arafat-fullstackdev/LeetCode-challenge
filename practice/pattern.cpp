@@ -5,6 +5,8 @@ int main() {
     int n;
    
     cin>>n;
+
+    //** */ Square pattern
     // for(int i =0; i<n; i++){  //outer loop
     //     for(int j =0; j<n; j++){ //inner loop
     //         cout<<"*";
@@ -31,16 +33,28 @@ int main() {
     //     }
     //     cout<<endl;
     // }
-    char chart = 'A';
-    for(int i =0; i<n; i++){
-        for(int j =0; j<n; j++){
+    // char chart = 'A';
+    // for(int i =0; i<n; i++){
+    //     for(int j =0; j<n; j++){
 
-            cout <<chart<<" ";
-            chart ++;
+    //         cout <<chart<<" ";
+    //         chart ++;
+    //     }
+    //     cout<<endl;
+    // }
+    //? Triangle pattern
+    // for(int i =0; i<=n; i++){
+    //     for(int j =0; j<i+1; j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+    // print number
+    for(int i =0; i<=n; i++){
+        for(int j =0; j<i+1; j++){
+            cout<<i+1<<" ";
         }
         cout<<endl;
     }
-    
-    
     return 0;
 }
