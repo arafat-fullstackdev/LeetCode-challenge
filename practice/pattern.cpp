@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int n;
-   
-    cin>>n;
+
+    cin >> n;
 
     //** */ Square pattern
     // for(int i =0; i<n; i++){  //outer loop
@@ -22,20 +23,20 @@ int main() {
     //     ch = ch +1;  // char + int
     //    }
     //    cout<<endl;
-       
+
     // }
 
-    //int num =1;
-    // for(int i =0; i<n; i++){
-    //     for(int k =0; k<n; k++){
-    //      cout<<num<<" ";
-    //      num++;
-    //     }
-    //     cout<<endl;
-    // }
-    // char chart = 'A';
-    // for(int i =0; i<n; i++){
-    //     for(int j =0; j<n; j++){
+    // int num =1;
+    //  for(int i =0; i<n; i++){
+    //      for(int k =0; k<n; k++){
+    //       cout<<num<<" ";
+    //       num++;
+    //      }
+    //      cout<<endl;
+    //  }
+    //  char chart = 'A';
+    //  for(int i =0; i<n; i++){
+    //      for(int j =0; j<n; j++){
 
     //         cout <<chart<<" ";
     //         chart ++;
@@ -57,15 +58,30 @@ int main() {
     //     cout<<endl;
     // }
 
-    //print char
-    
-    for(int i =0; i<=n; i++){
-        char chr= 'A' +i;
-       for(char j =0; j<=i; j++){
-        cout<<chr<<" ";
-         
-       }
-       cout<<endl;
+    // print char
+
+    // for(int i =0; i<=n; i++){
+    //     char chr= 'A' +i;
+    //    for(char j =0; j<=i; j++){
+    //     cout<<chr<<" ";
+
+    //    }
+    //    cout<<endl;
+    // }
+
+    //* print Pyramid
+    for (int i = 0; i < n; i++)
+    {
+        // white space
+        for (int j = 0; j <  n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        for (int k = 0; k <=i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
     }
     return 0;
 }
