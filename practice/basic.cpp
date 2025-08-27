@@ -2,24 +2,38 @@
 #include <iostream>
 using namespace std;
 
-int revNumDigits(int n){
-      int revNum =0;
+int revNumDigits(int n)
+{
+    int revNum = 0;
 
-      while (n> 0)
-      {
-       revNum = revNum * 10 + n%10;
-       n = n/10;
-      }
-      
-return revNum;
+    while (n > 0)
+    {
+        revNum = revNum * 10 + n % 10;
+        n = n / 10;
+    }
+
+    return revNum;
+}
+//
+int rvwNumDigits(int n)
+{
+    int revNum = 0;
+
+    while (n > 0)
+    {
+        revNum = revNum * 10 + n % 10;
+        n = n / 10;
+    }
+
+    return revNum;
 }
 
-int main() {
+int main()
+{
     int n;
-   cin>>n;
-   cout<<revNumDigits(n);
-   return 0;
+    cin >> n;
+    cout << revNumDigits(n);
+    return 0;
 
-    
     return 0;
 }
