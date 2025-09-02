@@ -37,36 +37,46 @@ using namespace std;
 // }
 
 // Diamond Shaped Pattern in C++
-void diamondPattern(int n){
-    //Upper Half
-    for(int i =1; i<=n; i++){
-        for(int j =1; j<=n-i; j++){
-            cout<<" ";
-        }
-        for(int k =1; k<= 2*i-1;k++){
-            cout<<"*";
+// void diamondPattern(int n){
+//     //Upper Half
+//     for(int i =1; i<=n; i++){
+//         for(int j =1; j<=n-i; j++){
+//             cout<<" ";
+//         }
+//         for(int k =1; k<= 2*i-1;k++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+//     // DownWard
+// for(int i =1; i<=n-1; i++){
+//     for(int j =1; j<=i; j++){
+//         cout<<" ";
+//     }
+//     for(int g =1; g<=2*(n-i)-1; g++){
+//         cout<<"*";
+//     }
+//     cout<<endl;
+// }
+// }
+//invert
+void invretPt(int n){
+    for(int i =n; i>0; i--){
+        for(int j =0; j<i; j++){
+            cout<<"#";
+
         }
         cout<<endl;
     }
-    // DownWard
-for(int i =1; i<=n-1; i++){
-    for(int j =1; j<=i; j++){
-        cout<<" ";
-    }
-    for(int g =1; g<=2*(n-i)-1; g++){
-        cout<<"*";
-    }
-    cout<<endl;
 }
-}
-
 
 int main() {
     int n;
     cin>>n;
     //starPattern(n);
     //invertPattern(n);
-    diamondPattern(n);
+    //diamondPattern(n);
+    invretPt(n);
     
     return 0;
 }
