@@ -68,5 +68,10 @@ public:
     if (not_found_pos == std::string::npos) {
         std::cout << "Character '" << non_existent_char << "' not found, as expected." << std::endl;
     }
-    
-};
+    // deref
+  int x ;
+   x =5;
+   int *ptr = &x;
+   cout<<*ptr<<endl;
+   return 0;
+}
