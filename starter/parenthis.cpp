@@ -62,12 +62,7 @@ public:
     }
 
     // Find a character that doesn't exist in the string
-    char non_existent_char = 'z';
-    size_t not_found_pos = my_string.find(non_existent_char);
 
-    if (not_found_pos == std::string::npos) {
-        std::cout << "Character '" << non_existent_char << "' not found, as expected." << std::endl;
-    }
     // deref
   int x ;
    x =5;
